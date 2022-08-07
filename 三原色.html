@@ -7,15 +7,16 @@
         }
     
     </style>
+    <script>
+        window.onload = function(){
+var el = document.getElementById('notification');
+el.play();
+}
+    </script>
     </head>
 <body>
-<figure>
-    <figcaption>Listen</figcaption>
-    <audio
-        controls
-        src="/score/三原色 最終版.flac">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure><br>
+    <audio id="notification" preload="auto">
+    <source src="/score/三原色 最終版.flac" />
+</audio>
+<br>
     <h1>page:gobousei,github; music:yoasobi; arrangement:ぱぱぱのパァ; bgimg:nintendo.</h1>
