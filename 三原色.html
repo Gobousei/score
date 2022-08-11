@@ -6,8 +6,35 @@
     background-image: url("https://www.nintendo.co.jp/ngc/gpvj/pworld/wallpaper/wp_a_1024.jpg");
     background-size: cover;
         }
-    
+    .modal-open{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 50px;
+  font-weight: bold;
+  color: white;
+  background: #000;
+  margin: auto;
+  cursor: pointer;
+  transform: translate(-50%,-50%);
+}
     </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+$(function(){
+  // 変数に要素を入れる
+  var open = $('.modal-open'),
+
+  //開くボタンをクリックしたらモーダルを表示する
+  open.on('click',function(){ 
+    window.open('https://forms.gle/rBBKN54EwsvX3n5b6', '_blank');
+  });
+    });
+    </script>
     </head>
 <body><figure>
     <figcaption><font color="white">原曲</font></figcaption>
@@ -42,7 +69,7 @@
             Your browser does not support the
             <code>audio</code> element.
     </audio>
-</figure><br>
-    <a href="https://forms.gle/rBBKN54EwsvX3n5b6"><font　size="7" color="red" face="ＭＳ 明朝,平成明朝">編曲案を提案する</font></a><br>
+</figure><br><div class="modal-open">編曲案を提案する</div>
+    <br>
     <h1>page:gobousei,github; music:yoasobi; arrangement:ぱぱぱのパァ,gobousei; bgimg:nintendo.</h1>
     <a href="https://www.ufret.jp/song.php?data=93335">三原色コード進行</a>
