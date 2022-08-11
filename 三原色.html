@@ -2,6 +2,11 @@
 <head>
     <title>三原色</title>
 <style>
+    .child {
+  width: 50%;
+  /* 水平方向の中央揃え */
+  margin: 0 auto;
+}
     body {
     background-image: url("https://www.nintendo.co.jp/ngc/gpvj/pworld/wallpaper/wp_a_1024.jpg");
     background-size: cover;
@@ -27,7 +32,9 @@
     }
     </script>
     </head>
-<body><figure>
+<body>
+    <div class="child">
+    <figure>
     <figcaption><font color="white">原曲</font></figcaption>
     <audio
         controls
@@ -60,5 +67,6 @@
             <code>audio</code> element.
     </audio>
 </figure>
+                                </div>
 </body>
 </html>
